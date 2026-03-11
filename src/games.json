@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "Slope",
+    "description": "The ultimate speed run game that will put your skills to the test.",
+    "thumbnail": "https://picsum.photos/seed/slope/400/225",
+    "url": "https://kdata1.com/2020/05/slope/",
+    "category": "Action"
+  },
+  {
+    "id": "2",
+    "title": "Tunnel Rush",
+    "description": "Fast-paced dodging game through a colorful tunnel.",
+    "thumbnail": "https://picsum.photos/seed/tunnel/400/225",
+    "url": "https://tunnelrush.org/tunnel-rush.embed",
+    "category": "Arcade"
+  },
+  {
+    "id": "3",
+    "title": "1v1.LOL",
+    "description": "Build and fight in this competitive third-person shooter.",
+    "thumbnail": "https://picsum.photos/seed/1v1/400/225",
+    "url": "https://1v1.lol/",
+    "category": "Shooter"
+  },
+  {
+    "id": "4",
+    "title": "Retro Bowl",
+    "description": "The perfect game for the armchair quarterback.",
+    "thumbnail": "https://picsum.photos/seed/retrobowl/400/225",
+    "url": "https://game316009.konggames.com/gamefile/0031/6009/at-embed.html",
+    "category": "Sports"
+  },
+  {
+    "id": "5",
+    "title": "BitLife",
+    "description": "A life simulator where you make all the choices.",
+    "thumbnail": "https://picsum.photos/seed/bitlife/400/225",
+    "url": "https://bitlifeonline.io/bitlife-online.embed",
+    "category": "Simulation"
+  },
+  {
+    "id": "6",
+    "title": "Cookie Clicker",
+    "description": "Click the cookie to bake more cookies!",
+    "thumbnail": "https://picsum.photos/seed/cookie/400/225",
+    "url": "https://orteil.dashnet.org/cookieclicker/",
+    "category": "Idle"
+  }
+]
