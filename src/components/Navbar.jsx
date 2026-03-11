@@ -1,18 +1,41 @@
 import React from 'react';
 import { Search, User, Bell, Settings, LayoutGrid } from 'lucide-react';
 
-export const Navbar = () => {
+export const Navbar = ({ onViewChange, currentView }) => {
   return (
     <nav className="sticky top-0 z-40 flex items-center justify-between bg-xbox-black/80 px-6 py-4 backdrop-blur-md">
       <div className="flex items-center gap-8">
-        <h1 className="text-2xl font-black italic tracking-tighter text-xbox-green">
+        <h1 
+          className="text-2xl font-black italic tracking-tighter text-xbox-green cursor-pointer"
+          onClick={() => onViewChange('Home')}
+        >
           RUDYMANE
         </h1>
         <div className="hidden items-center gap-6 md:flex">
-          <button className="text-sm font-bold uppercase tracking-widest text-white border-b-2 border-xbox-green pb-1">Home</button>
-          <button className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Games</button>
-          <button className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Apps</button>
-          <button className="text-sm font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">Settings</button>
+          <button 
+            onClick={() => onViewChange('Home')}
+            className={`text-sm font-bold uppercase tracking-widest transition-colors ${currentView === 'Home' ? 'text-white border-b-2 border-xbox-green pb-1' : 'text-gray-400 hover:text-white'}`}
+          >
+            Home
+          </button>
+          <button 
+            onClick={() => onViewChange('Games')}
+            className={`text-sm font-bold uppercase tracking-widest transition-colors ${currentView === 'Games' ? 'text-white border-b-2 border-xbox-green pb-1' : 'text-gray-400 hover:text-white'}`}
+          >
+            Games
+          </button>
+          <button 
+            onClick={() => onViewChange('Apps')}
+            className={`text-sm font-bold uppercase tracking-widest transition-colors ${currentView === 'Apps' ? 'text-white border-b-2 border-xbox-green pb-1' : 'text-gray-400 hover:text-white'}`}
+          >
+            Apps
+          </button>
+          <button 
+            onClick={() => onViewChange('Settings')}
+            className={`text-sm font-bold uppercase tracking-widest transition-colors ${currentView === 'Settings' ? 'text-white border-b-2 border-xbox-green pb-1' : 'text-gray-400 hover:text-white'}`}
+          >
+            Settings
+          </button>
         </div>
       </div>
 
@@ -28,12 +51,6 @@ export const Navbar = () => {
         <button className="rounded-full bg-xbox-gray p-2 text-gray-400 hover:bg-xbox-green hover:text-white transition-all">
           <Bell size={18} />
         </button>
-        <div className="flex items-center gap-2 rounded-full bg-xbox-gray px-3 py-1.5 hover:bg-xbox-green transition-all cursor-pointer group">
-          <div className="h-6 w-6 rounded-full bg-xbox-green flex items-center justify-center text-[10px] font-bold text-white">
-            R
-          </div>
-          <span className="text-xs font-bold text-white">RUDY</span>
-        </div>
       </div>
     </nav>
   );

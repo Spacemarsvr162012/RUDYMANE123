@@ -46,5 +46,37 @@
     "thumbnail": "https://picsum.photos/seed/cookie/400/225",
     "url": "https://orteil.dashnet.org/cookieclicker/",
     "category": "Idle"
+  },
+  {
+    "id": "7",
+    "title": "Paper.io 2",
+    "description": "Capture as much territory as possible.",
+    "thumbnail": "https://picsum.photos/seed/paperio/400/225",
+    "url": "https://paper-io.com/",
+    "category": "Arcade"
+  },
+  {
+    "id": "8",
+    "title": "Minecraft Classic",
+    "description": "The original building game in your browser.",
+    "thumbnail": "https://picsum.photos/seed/minecraft/400/225",
+    "url": "https://classic.minecraft.net/",
+    "category": "Sandbox"
+  },
+  {
+    "id": "9",
+    "title": "Subway Surfers",
+    "description": "Run as far as you can and dodge the trains.",
+    "thumbnail": "https://picsum.photos/seed/subway/400/225",
+    "url": "https://subwaysurfers.com/",
+    "category": "Action"
+  },
+  {
+    "id": "10",
+    "title": "Tetris",
+    "description": "The classic block-stacking puzzle game.",
+    "thumbnail": "https://picsum.photos/seed/tetris/400/225",
+    "url": "https://tetris.com/play-tetris",
+    "category": "Puzzle"
   }
 ]
