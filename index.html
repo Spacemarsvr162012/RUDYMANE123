@@ -7,7 +7,22 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <script>
+      console.log('RUDYMANE: index.html loaded');
+      window.addEventListener('error', function(e) {
+        console.error('RUDYMANE: Global error caught:', e.message, 'at', e.filename, ':', e.lineno);
+        const root = document.getElementById('root');
+        if (root && !root.innerHTML) {
+          root.innerHTML = '<div style="color: white; background: #111; padding: 20px; font-family: sans-serif;">' +
+            '<h1 style="color: #107c10;">RUDYMANE: Load Error</h1>' +
+            '<p>The application failed to start. This is often due to a script loading error.</p>' +
+            '<p style="color: #ff4444;">Error: ' + e.message + '</p>' +
+            '<p style="font-size: 12px; color: #888;">Check the browser console (F12) for more details.</p>' +
+            '</div>';
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
 
